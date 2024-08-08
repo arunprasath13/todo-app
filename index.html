@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>To-Do App</h1>
+        <div class="input">
+          <input type="text" id="search-todo" placeholder="Search Todo" />
+        </div>
+      </header>
+      <main>
+        <input type="text" id="new-todo" placeholder="Add a new task" />
+        <input type="text" id="add-category" placeholder="Category" />
+        <button id="add-todo">Add</button>
+
+        <div class="filters">
+          <label for="category-filter">Category:</label>
+          <select id="category-filter">
+            <option value="">All</option>
+            <option value="work">Work</option>
+            <option value="personal">Personal</option>
+          </select>
+
+          <label for="sort-order">Sort by:</label>
+          <select id="sort-order">
+            <option value="name">Name</option>
+            <option value="category">Category</option>
+          </select>
+        </div>
+      </main>
+
+      <ul id="todo-list"></ul>
+
+      <!-- <div id="loader" class="hidden">Loading...</div> -->
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
