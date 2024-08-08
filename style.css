@@ -24,6 +24,7 @@ header input,input{
 main{
     /* min-height:100vh; */
     text-align: center;
+    margin-top: 30px;
 }
 
 button{
